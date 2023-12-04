@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>js object method 2</head>
+
+<body>
+
+    You can add a new method to an existing object<br>
+
+    <p id="demo"></p>
+
+    <script>
+
+        const person={ firstName:"Boris", lastName:"Johnson", id:4511};
+
+
+        // here is where you add a method to the object
+
+        person.name= function(){ return (this.firstName+" "+this.lastName).toUpperCase(); };
+
+        document.getElementById("demo").innerHTML="My father is "+person.name();
+
+
+
+    </script>
+
+</body>
+
+
+</html>

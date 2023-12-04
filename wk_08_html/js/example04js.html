@@ -1,0 +1,47 @@
+
+<!--20231022 example from w3schools
+    https://www.w3schools.com/js/js_class_intro.asp
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>js classes strict mode</title>
+</head>
+
+<body>
+    <h2>js classes use strict mode</h2>
+
+    In a js class you can't use a variable without declaring it, including its type
+
+    <p id="demo"></p>
+
+    <script>
+
+        class Car
+        {
+            constructor(name, year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+
+
+            age()
+            {
+                const date=new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+
+        const myCar=new Car("Ford",2014);
+        document.getElementById("demo").innerHTML=
+        "My Car "+myCar.age()+" years old";
+
+    </script>
+
+</body>
+
+</html>

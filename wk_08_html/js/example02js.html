@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!-- 20231022 this is an example from w3schools https://www.w3schools.com/js/js_class_intro.asp
+
+    -->
+
+    <head>js test</head>
+
+    <body>
+        <h1>js class methods</h1>
+        <h2>define and use a class method</h2>
+
+        <p id="demo"></p>
+
+
+    <script>
+        class Car
+        {
+            constructor(name,year)
+            {
+                this.name=name;
+                this.year=year;
+            }
+
+            age()
+            {
+                const date= new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+
+        const myCar= new Car("Ford", 2014);
+
+        document.getElementById("demo").innerHTML=
+        "My Car is "+myCar.age()+ " years old";
+
+        
+    </script>
+
+</body>
+
+</html>

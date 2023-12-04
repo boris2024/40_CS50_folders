@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+
+<!-- how to invoke a function as a method that belongs to an object -->
+
+<html>
+
+<body>
+
+        <h3>example of method that belongs to object</h3>
+
+        <p id="example01"></p>
+
+</body>
+
+<script>
+
+    const myObject=
+    {
+        firstName:"John", lastName:"Wick",
+
+    }
+
+    myObject.fullName=function(){return this.firstName+"  "+this.lastName;}
+
+    document.getElementById("example01").innerHTML=myObject.fullName();
+
+</script>
+
+</html>

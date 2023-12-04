@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <h3>this is an example of an object definition with a method included</h3>
+
+    <p id="demo"></p>
+
+    <script>
+        // step 1, create object with properties and method
+
+        const person=
+        {
+            firstName:"Sadio",lastName:"Mane",id:69,
+
+            fullName:function(){return "My heroe is "+this.firstName+" "+this.lastName;}
+        }
+
+        // step 2, display data from the object
+        document.getElementById("demo").innerHTML=person.fullName();
+
+
+    </script>
+</body>
+
+</html>

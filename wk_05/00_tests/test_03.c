@@ -1,0 +1,76 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+// 20230519, example from programiz, https://www.programiz.com/dsa/linked-list
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+int main(void)
+{
+    // initialize nodes, declare the address for each node, initially all set to NULL
+    struct node *head=NULL;
+    struct node *one=NULL;
+    struct node *two=NULL;
+    struct node *three=NULL;
+    struct node *four=NULL;
+
+    //printf("\n00 address of node three = %p\n",three);
+
+    // allocate memory for each node, except for the head
+
+    // since an address was allocated for this type to a
+    // certain pointer, then you have access to the fields of this data type
+
+    // remember to check for NULL
+
+    one=malloc(sizeof(struct node));
+    two=malloc(sizeof(struct node));
+    three=malloc(sizeof(struct node));
+    four=malloc(sizeof(struct node));
+
+    //printf("\n01 address of node three = %p\n",three);
+
+    //int x=sizeof(struct node);
+
+    //printf("\nsize of struct node = %d\n", x);
+
+
+    // assign data values, use the pointer who has received a memory address
+    // since it has gotten a memory address, you have access to the fields of the data type
+
+    one->data=1;    two->data=2;    three->data=3;  four->data=4;
+
+    // connect nodes
+
+    one->next= four;
+    four->next=two;
+    two->next= three;
+    three->next= NULL;
+
+    // save address of the first node in pointer head
+
+    head=one;
+
+
+    printf("\n00 address of node head = %p\n",head);
+    printf("\n01 address of node one = %p\n",one);
+    printf("\n02 one->next = %p\n",one->next);
+    printf("\n03 address of node four = %p\n",four);
+    printf("\n04 address of four->next = %p\n", four->next);
+    printf("\n05 address of node two = %p\n", two);
+    printf("\n06 address of two->next = %p\n", two->next);
+    printf("\n07 address of node three = %p\n",three);
+    printf("\n08 address of three->next = %p\n",three->next);
+
+
+
+    free(one);
+    free(two);
+    free(three);
+    free(four);
+
+}

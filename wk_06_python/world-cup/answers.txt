@@ -1,0 +1,17 @@
+Times:
+
+10 simulations: 0m0.029s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.035s
+10000 simulations: 0m0.114s
+100000 simulations: 0m0.819s
+1000000 simulations: 0m7.536s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+Traditional favorites were not part of the simulation results starting with N=100
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+Based on the results observed, and the stability in results, "good enough" starts with N=1000

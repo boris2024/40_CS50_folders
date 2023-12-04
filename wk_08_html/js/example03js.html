@@ -1,0 +1,51 @@
+
+<!-- example from w3schools https://www.w3schools.com/js/js_class_intro.asp
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>js example</title>
+</head>
+
+<body>
+
+        <h2>this is my 3rd example using js<br><br>this time a parameter is passed into the "age()" method</h2>
+
+        <p id="demo"></p>
+
+        <script>
+
+            class Car
+            {
+                constructor(name,year)
+                {
+                    this.name=name;
+                    this.year=year;
+                }
+
+                age(x)
+                {
+                    return x - this.year;
+                }
+            }
+
+            const date= new Date();
+
+            let year=date.getFullYear();
+
+            const myCar= new Car("Ford",2014);
+
+            document.getElementById("demo").innerHTML=
+
+            "My Car is " +myCar.age(year) + " years old";
+
+
+        </script>
+
+</body>
+
+
+</html>

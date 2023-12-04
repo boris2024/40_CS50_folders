@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<body id="example022">
+    <h2>example using html events and js handlers</h2>
+
+    <button onclick=displayDate()>press here to learn current time</button>
+
+    <p id="example01"></p>
+
+    <button id="example02" onclick=changeColorS() onclick=changeBGcolor()><b>press HERE</b></button>
+
+
+</body>
+
+<script>
+    function displayDate(){ document.getElementById("example01").innerHTML=Date();}
+
+    function changeColorS(){document.getElementById("example022").style.backgroundColor="blue",
+                                document.getElementById("example022").style.color="tomato";}
+
+
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <body>
+
+        <h2>this is an example of local and non local variables in functions</h2>
+
+        <h3>outside of the function myFunction() the variable carname is undefined</h3>
+
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            let text="outside: " + typeof carName;
+            document.getElementById("demo1").innerHTML=text;
+
+            function myFunction()
+            {
+                let carName="volvo";
+                let text="Inside: "+typeof carName+" "+carName;
+
+                document.getElementById("demo2").innerHTML=text;
+
+            }
+
+
+            myFunction();
+        </script>
+
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "ctype.h": "c",
+        "string.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "stdlib.h": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "cmath": "c",
+        "stdio.h": "c",
+        "cs50.h": "c",
+        "stdint.h": "c",
+        "stdbool.h": "c",
+        "math.h": "c",
+        "random": "c",
+        "limits": "c",
+        "algorithm": "c"
+    },
+    "gitdoc.enabled": true
+}

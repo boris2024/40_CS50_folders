@@ -1,0 +1,44 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+
+I ran 3 time measurements for each pair of sort technique + data set (reversed and sorted, 5000, 10000, 50000).
+. I recorded the results and tabulated the data, then created an x-y dispersion graph ( time vs array size ).
+
+the real time for each set changed the most for the bubble sort technique.
+Also, the time to sort sorted arrays was the lowest for all analyzed conditions.
+
+this is so, because big o for sorting a sorted array is proportional to n
+( instead of n*log n or n*n, which yield longer sorting times ) for bubble sort.
+
+The graph for sorted data using the sort1 technique had the lowest real time of all techiques given that for a sorted situation
+the Big O tends to be linear (n) instead of (nlog n) (for merge sort) or (n2) for selection sort
+
+
+sort2 uses: Merge Sort
+
+How do you know?:
+
+after figuring out sort 1 is bubble sort, I erased both curves for this sort technique from the graph mentioned above.
+Hence I was left with 4 curves on the time vs array size graph.
+
+- sort 2, reversed, time vs array size
+- sort 2, sorted, time vs array size
+- sort 3, reversed, time vs array size
+- sort 3, sorted, time vs array size
+
+in both cases, for sorted and reversed, the real time measurements for sort 2 were lower than those of
+sort 3 (selection sort)
+
+this is because in either condition (sorted or reversed) big o for merge sort is always lower than
+selection sorts given the nature of its dependency
+
+big o (n2) vs big o (n*log n)
+
+for a given array size, the expected time complexity is always lower for selection sort than for merge sort
+
+
+
+sort3 uses: Selection Sort
+
+How do you know?: same as above
